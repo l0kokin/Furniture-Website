@@ -104,15 +104,8 @@
 }
 
 .chair--item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 296px;
   height: 288.86px;
-  background-color: var(--background);
-  border: transparent;
-  border-radius: 20px;
   margin-top: 9px;
   transition: 0.3s ease-in-out;
 
@@ -155,7 +148,7 @@
 
 /* ------------ WHY CHOOSE US ---------- */
 .whychooseus {
-  margin: 144px 155px 144px 99px;
+  margin: 144px 155px 244px 99px;
   display: flex;
   gap: 199px;
 
@@ -195,6 +188,7 @@
   position: relative;
   p {
     width: 247px;
+    color: var(--text-color);
   }
   img {
     position: absolute;
@@ -209,10 +203,126 @@
 
 .whychooseus--dots {
   position: absolute;
+  z-index: -1;
 }
 
 .whychooseus--img {
   position: absolute;
   top: 44.2px;
   left: 83px;
+  z-index: 1;
+}
+
+/* --------- We help you -------- */
+.wehelp {
+  padding: 40px 113px 0px 95px;
+  height: 700px;
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.img--grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+
+  img {
+    position: absolute;
+    border-radius: 8px;
+  }
+}
+
+.img1 {
+  top: 72.45px;
+  left: 113px;
+}
+
+.img2 {
+  top: 71.51px;
+  left: 544px;
+}
+
+.img3 {
+  top: 265px;
+  left: 492px;
+}
+
+.wehelp--text {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-top: 130px;
+
+  p {
+    width: 444px;
+  }
+
+  ul {
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 22.58px;
+  }
+
+  li {
+    width: 194px;
+  }
+
+  button {
+    margin-top: 20px;
+  }
+}
+
+.wehelp--title {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 41px;
+}
+
+/* -------- TESTIMONIALS ------ */
+.testimonials {
+  padding: 210px 201px 210px 175px;
+
+  div {
+    gap: 46px;
+
+    div {
+      gap: 36px;
+    }
+  }
+}
+
+.testimonial-chair--item {
+  width: 98px;
+  height: 92px;
+
+  img {
+    width: 91px;
+    position: absolute;
+    bottom: -2px;
+  }
+}
+
+.gap {
+  gap: 36px;
+}
+
+.chair--text {
+  width: 211px;
+  gap: 10.35px;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.description {
+  color: var(--text-color);
+  font-size: 14px;
 }
