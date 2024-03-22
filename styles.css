@@ -89,9 +89,7 @@
 }
 
 .chairs--title {
-  font-size: 34px;
-  font-weight: 600;
-  line-height: 51px;
+  line-height: 51px !important;
 }
 
 .chairs {
@@ -104,9 +102,16 @@
 }
 
 .chair--item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: transparent;
+  border-radius: 20px;
   width: 296px;
   height: 288.86px;
   margin-top: 9px;
+  background-color: var(--background);
   transition: 0.3s ease-in-out;
 
   img {
@@ -217,7 +222,6 @@
 .wehelp {
   padding: 40px 113px 0px 95px;
   height: 700px;
-  /* position: relative; */
   display: flex;
   justify-content: space-between;
 }
@@ -276,12 +280,6 @@
   }
 }
 
-.wehelp--title {
-  font-size: 34px;
-  font-weight: 600;
-  line-height: 41px;
-}
-
 /* -------- TESTIMONIALS ------ */
 .testimonials {
   padding: 210px 201px 210px 175px;
@@ -295,15 +293,30 @@
   }
 }
 
+.testimonials--container {
+  display: flex;
+  flex-direction: column;
+}
+
 .testimonial-chair--item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: transparent;
+  border-radius: 20px;
   width: 98px;
   height: 92px;
+  background-color: var(--background-small);
 
   img {
-    width: 91px;
     position: absolute;
     bottom: -2px;
   }
+}
+
+.middle-item {
+  left: 2px;
 }
 
 .gap {
@@ -325,4 +338,30 @@
 .description {
   color: var(--text-color);
   font-size: 14px;
+}
+
+.testimonials--text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 115px;
+}
+
+.testimonial--p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  width: 759px;
+}
+
+.testimonial--btn {
+  padding: 20px 25px;
+  background-color: var(--grey);
+  border-radius: 50%;
+}
+
+.testimonial--btn:hover {
+  background-color: var(--yellow);
 }
