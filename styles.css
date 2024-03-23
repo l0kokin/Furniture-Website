@@ -283,19 +283,12 @@
 /* -------- TESTIMONIALS ------ */
 .testimonials {
   padding: 210px 201px 210px 175px;
-
-  div {
-    gap: 46px;
-
-    div {
-      gap: 36px;
-    }
-  }
 }
 
 .testimonials--container {
   display: flex;
   flex-direction: column;
+  gap: 115px;
 }
 
 .testimonial-chair--item {
@@ -319,13 +312,11 @@
   left: 2px;
 }
 
-.gap {
-  gap: 36px;
-}
-
 .chair--text {
-  width: 211px;
+  display: flex;
+  flex-direction: column;
   gap: 10.35px;
+  width: 211px;
   font-family: Inter;
   font-size: 14px;
   line-height: 22px;
@@ -345,7 +336,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 115px;
+  gap: 44px;
+  text-align: center;
 }
 
 .testimonial--p {
@@ -364,4 +356,116 @@
 
 .testimonial--btn:hover {
   background-color: var(--yellow);
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: center;
+  margin-top: 205px;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.author--info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  :nth-child(1) {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+
+  :nth-child(2) {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+
+/* -------------- BLOGS ------------ */
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 87px;
+  margin: 0px 199px 327px 156px;
+
+  button {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 3px solid var(--yellow);
+    cursor: pointer;
+  }
+}
+
+.blog--title {
+  line-height: 51px !important;
+}
+
+.blog--item {
+  font-family: Inter;
+
+  img {
+    width: 360px;
+    border-radius: 8px;
+  }
+}
+
+.blog--name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  margin-top: 44px;
+}
+
+.blog--info {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  margin-top: 5px;
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.mail {
+  padding: 0px 0px 75px 92.57px;
+}
+
+/* -------------------- FOOTER ------------- */
+footer {
+  position: relative;
+}
+
+.subscribe {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+}
+
+.sofa {
+  position: absolute;
+  right: 136px;
+  top: -143px;
+}
+
+.social-media {
+  display: flex;
+  gap: 2px;
+
+  div {
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--grey);
+    width: 41px;
+    height: 41px;
+  }
 }
