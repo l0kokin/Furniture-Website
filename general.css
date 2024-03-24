@@ -6,16 +6,17 @@
 
 :root {
   /* COLORS */
-  --green: #35736e;
-  --white: #eff2f1;
-  --yellow: #ffd748;
-  --grey: #cacaca;
-  --black: #000000;
+  --green: rgb(53, 115, 110);
+  --white: rgb(239, 242, 241);
+  --light-background: rgba(239, 242, 241, 1);
+  --yellow: rgb(255, 215, 72);
+  --grey: rgb(202, 202, 202);
+  --black: rgb(0, 0, 0);
   --shadow: rgba(0, 0, 0, 0.25);
   --background: rgba(53, 115, 110, 0.1);
   --background-small: rgba(53, 115, 110, 0.3);
-  --light-background: rgba(239, 242, 241, 1);
   --text-color: rgba(106, 106, 106, 1);
+  --text-color-dark: rgba(47, 47, 47, 1);
 }
 
 body {
@@ -58,6 +59,12 @@ button {
   background-color: var(--yellow);
 }
 
+.btn-yellow:hover {
+  background-color: var(--green);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
 .btn-green {
   font-family: "Poppins", sans-serif;
   padding: 10px 45px;
@@ -68,6 +75,11 @@ button {
   font-size: 20px;
   line-height: 30px;
   background-color: var(--green);
+}
+
+.btn-green:hover {
+  background-color: var(--yellow);
+  color: var(--black);
 }
 
 .small-text {
@@ -89,6 +101,10 @@ button {
   align-items: left;
 }
 
+.readmore-btn:hover {
+  text-decoration: underline;
+}
+
 .title {
   font-size: 34px;
   font-weight: 600;
@@ -97,4 +113,11 @@ button {
 
 footer {
   background-color: #ffffff;
+  color: var(--text-color);
+  position: relative;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 55px;
 }
