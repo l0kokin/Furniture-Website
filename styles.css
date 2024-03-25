@@ -10,8 +10,7 @@
   display: flex;
   flex-direction: row;
   gap: 34px;
-  writing-mode: horizontal-tb;
-  margin-left: 658px;
+  margin-left: 600px;
   margin-right: 111px;
   max-height: 100px;
 }
@@ -20,11 +19,12 @@
   font-size: 20px;
   line-height: 30px;
   color: var(--white);
-  border: 5px transparent;
+  border-bottom: 5px transparent;
 }
 
 .menu--item:hover {
   border-bottom: 5px solid var(--yellow);
+  margin-bottom: -5px;
   cursor: pointer;
 }
 
@@ -343,11 +343,12 @@
   font-family: Inter;
   font-size: 18px;
   line-height: 32px;
-  width: 759px;
 }
 
-.active--btn {
-  margin-top: 40px;
+.carousel-buttons {
+  margin-top: 44px;
+  display: flex;
+  gap: 13px;
 }
 
 .carousel-control-prev-icon,
