@@ -7,9 +7,13 @@
 }
 
 .menu {
+  display: flex;
+  flex-direction: row;
   gap: 34px;
+  writing-mode: horizontal-tb;
   margin-left: 658px;
   margin-right: 111px;
+  max-height: 100px;
 }
 
 .menu--item {
@@ -36,15 +40,6 @@
     display: flex;
     gap: 24px;
   }
-}
-
-.cover--text {
-  font-family: "DM Serif Text", Arial, Helvetica, sans-serif;
-  font-size: 55px;
-  line-height: 75.41px;
-  color: var(--white);
-  width: 542px;
-  padding-top: 146px;
 }
 
 .cover--btn {
@@ -340,21 +335,47 @@
   text-align: center;
 }
 
+.carousel-item {
+  height: 124.2px;
+}
+
 .testimonial--p {
   font-family: Inter;
   font-size: 18px;
-  font-weight: 400;
   line-height: 32px;
   width: 759px;
 }
 
-.testimonial--btn {
-  padding: 20px 25px;
-  background-color: var(--grey);
-  border-radius: 50%;
+.active--btn {
+  margin-top: 40px;
 }
 
-.testimonial--btn:hover {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  padding: 17px 20px;
+  background-color: var(--grey);
+  color: var(--black);
+  border-radius: 50%;
+  margin-bottom: 450px;
+  background-image: none;
+  width: 58px;
+  height: 54.57px;
+  opacity: 0.1px;
+}
+
+.carousel-control-prev-icon {
+  margin-right: 300px;
+}
+
+.carousel-control-next-icon {
+  margin-left: 300px;
+}
+
+.carousel-control-prev-icon:hover {
+  background-color: var(--yellow);
+}
+
+.carousel-control-next-icon:hover {
   background-color: var(--yellow);
 }
 
@@ -364,6 +385,7 @@
   gap: 13px;
   align-items: center;
   margin-top: 205px;
+  margin-bottom: 40px;
 
   img {
     border-radius: 50%;
@@ -384,7 +406,6 @@
   :nth-child(2) {
     font-family: Inter;
     font-size: 13px;
-    font-weight: 400;
     line-height: 32px;
   }
 }
@@ -427,7 +448,6 @@
 
 .blog--info {
   font-size: 14px;
-  font-weight: 400;
   line-height: 16.94px;
   margin-top: 5px;
 
