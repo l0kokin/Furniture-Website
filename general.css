@@ -44,6 +44,7 @@ ul {
 button {
   border: none;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 .flex {
