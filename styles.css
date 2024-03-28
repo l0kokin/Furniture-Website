@@ -335,6 +335,10 @@
   text-align: center;
 }
 
+.carousel-width {
+  max-width: 759px;
+}
+
 .carousel-item {
   height: 124.2px;
 }
