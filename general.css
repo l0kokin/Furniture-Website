@@ -34,6 +34,12 @@ h1 {
   color: var(--white);
   width: 542px;
   padding-top: 146px;
+
+  @media screen and (max-width: 425px) {
+    font-size: 36px;
+    line-height: 50px;
+    width: 100%;
+  }
 }
 
 ul {
@@ -71,6 +77,12 @@ button {
   font-size: 20px;
   line-height: 30px;
   background-color: var(--yellow);
+
+  @media screen and (max-width: 425px) {
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .btn-yellow:hover {
@@ -89,6 +101,12 @@ button {
   font-size: 20px;
   line-height: 30px;
   background-color: var(--green);
+
+  @media screen and (max-width: 425px) {
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .btn-green:hover {
@@ -102,6 +120,11 @@ button {
   font-weight: 400;
   line-height: 24px;
   color: var(--text-color);
+
+  @media screen and (max-width: 425px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 
 .readmore-btn {
@@ -123,6 +146,11 @@ button {
   font-size: 34px;
   font-weight: 600;
   line-height: 41px;
+
+  @media screen and (max-width: 425px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 footer {
@@ -134,4 +162,10 @@ footer {
   font-weight: 400;
   line-height: 24px;
   padding-bottom: 55px;
+
+  @media screen and (max-width: 425px) {
+    font-size: 10px;
+    max-width: 100vw;
+    margin-bottom: 10px;
+  }
 }
