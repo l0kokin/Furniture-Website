@@ -4,6 +4,7 @@
   padding: 28px 35px;
   background-color: var(--green);
   height: 674px;
+  width: 100vw;
 }
 
 .menu {
@@ -28,6 +29,43 @@
   cursor: pointer;
 }
 
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: var(--green);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .menu.show {
+    display: flex;
+    margin: 20px 50px;
+    background-color: rgba(58, 124, 118, 0.95);
+    border-radius: 20px;
+    max-height: fit-content;
+    width: 80%;
+  }
+
+  .menu--item {
+    width: fit-content;
+    margin-left: 30px;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+}
+
 .cover {
   padding-left: 99px;
 }
@@ -36,6 +74,7 @@
   display: flex;
   flex-direction: column;
   gap: 73px;
+
   div {
     display: flex;
     gap: 24px;
@@ -56,6 +95,10 @@
   top: 212px;
   right: 74px;
   z-index: -1;
+
+  @media screen and (max-width: 760px) {
+    display: none;
+  }
 }
 
 .couch {
@@ -63,6 +106,10 @@
   position: absolute;
   top: 136px;
   left: 602px;
+
+  @media screen and (max-width: 760px) {
+    display: none;
+  }
 }
 
 /* -------------------- MAIN ------------------- */
@@ -71,15 +118,34 @@
 
 .chairs--container {
   margin: 80.92px 97px 80.92px 99px;
-  p {
-    width: 214px;
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+    gap: 100px;
   }
 }
 
 .chairs--text {
   gap: 0px;
+
   button {
     margin-top: 5.65px;
+  }
+
+  p {
+    width: 214px;
+  }
+
+  @media screen and (max-width: 760px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      width: 100%;
+    }
   }
 }
 
@@ -91,8 +157,13 @@
   gap: 42px;
 
   p {
-    text-align: cent er;
+    text-align: center;
     line-height: 24px;
+  }
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+    gap: 80px;
   }
 }
 
@@ -113,6 +184,10 @@
     position: absolute;
     top: -71.51px;
   }
+
+  @media screen and (max-width: 760px) {
+    width: 500px;
+  }
 }
 
 .elipse {
@@ -131,17 +206,19 @@
 }
 
 .chair--name {
+  width: fit-content;
   position: absolute;
   top: 191px;
-  left: 93px;
+  /* left: 93px; */
   font-size: 16px;
   font-weight: 600;
 }
 
 .chair--price {
+  width: fit-content;
   position: absolute;
   top: 215px;
-  left: 115px;
+  /* left: 115px; */
   font-size: 18px;
   font-weight: 700;
 }
@@ -154,6 +231,12 @@
 
   p {
     width: 444px;
+  }
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -186,10 +269,12 @@
 
 .reason {
   position: relative;
+
   p {
     width: 247px;
     color: var(--text-color);
   }
+
   img {
     position: absolute;
     top: 1.28px;
@@ -204,6 +289,10 @@
 .whychooseus--dots {
   position: absolute;
   z-index: -1;
+
+  @media screen and (max-width: 760px) {
+    display: none;
+  }
 }
 
 .whychooseus--img {
@@ -211,6 +300,10 @@
   top: 44.2px;
   left: 83px;
   z-index: 1;
+
+  @media screen and (max-width: 760px) {
+    position: initial;
+  }
 }
 
 /* --------- We help you -------- */
@@ -219,6 +312,12 @@
   height: 700px;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 760px) {
+    display: block;
+    flex-direction: column;
+    position: relative;
+  }
 }
 
 .img--grid {
@@ -230,6 +329,12 @@
   img {
     position: absolute;
     border-radius: 8px;
+  }
+
+  @media screen and (max-width: 760px) {
+    img {
+      display: none;
+    }
   }
 }
 
@@ -278,12 +383,26 @@
 /* -------- TESTIMONIALS ------ */
 .testimonials {
   padding: 210px 201px 210px 175px;
+
+  @media screen and (max-width: 760px) {
+    padding: 100px;
+  }
 }
 
 .testimonials--container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 115px;
+}
+
+.testimonial-chairs {
+  gap: 55px;
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+    gap: 100px;
+  }
 }
 
 .testimonial-chair--item {
@@ -310,7 +429,6 @@
 .chair--text {
   display: flex;
   flex-direction: column;
-  gap: 10.35px;
   width: 211px;
   font-family: Inter;
   font-size: 14px;
@@ -336,7 +454,14 @@
 }
 
 .carousel-width {
-  max-width: 759px;
+  max-width: 65%;
+  padding: 0px 50px;
+}
+
+@media screen and (max-width: 760px) {
+  .carousel-width {
+    padding: 0;
+  }
 }
 
 .carousel-item {
@@ -395,6 +520,10 @@
   img {
     border-radius: 50%;
   }
+
+  @media screen and (max-width: 760px) {
+    margin-top: 100px;
+  }
 }
 
 .author--info {
@@ -428,6 +557,20 @@
     font-weight: 600;
     border-bottom: 3px solid var(--yellow);
     cursor: pointer;
+  }
+}
+
+.blogs-title {
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.blogs {
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
@@ -472,12 +615,20 @@
   line-height: 21.78px;
   color: var(--text-color-dark);
   padding: 70px 0px 162px 145px;
+
+  @media screen and (max-width: 760px) {
+    padding: 60px;
+  }
 }
 
 .sofa {
   position: absolute;
   right: 136px;
   top: -143px;
+
+  @media screen and (max-width: 760px) {
+    display: none;
+  }
 }
 
 form {
@@ -491,6 +642,10 @@ form {
     width: 262px;
     padding-left: 22px;
     height: 45.79px;
+  }
+
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
   }
 }
 
@@ -517,6 +672,10 @@ form {
 
   p {
     width: 360px;
+
+    @media screen and (max-width: 760px) {
+      display: none;
+    }
   }
 
   ul {
@@ -566,5 +725,10 @@ form {
     display: flex;
     gap: 42px;
     justify-content: flex-end;
+  }
+
+  @media screen and (max-width: 760px) {
+    margin: 30px;
+    align-items: center;
   }
 }

@@ -43,7 +43,10 @@
       <section>
         <nav class="flex">
           <img src="./Images/FIN.png" alt="logo" />
-          <ul class="menu">
+          <div class="burger-menu" onclick="toggleMenu()">
+            <embed src="./icons/burger-menu.png" width="40px" />
+          </div>
+          <ul class="menu" id="menu">
             <li class="menu--item">Home</li>
             <li class="menu--item">About us</li>
             <li class="menu--item">Services</li>
@@ -70,6 +73,7 @@
         </div>
       </section>
     </header>
+
     <!----------------- MAIN SECTION  -------------->
     <main>
       <section class="chairs--container flex">
@@ -217,47 +221,49 @@
       <section class="testimonials">
         <div class="testimonials--container">
           <div class="flex">
-            <div class="flex gap">
-              <div class="testimonial-chair--item">
-                <img src="./Images/product-1.png" alt="chair" width="91px" />
+            <div class="testimonial-chairs flex">
+              <div class="flex gap">
+                <div class="testimonial-chair--item">
+                  <img src="./Images/product-1.png" alt="chair" width="91px" />
+                </div>
+                <div class="chair--text">
+                  <p class="name">Modern Chair</p>
+                  <p class="description">
+                    Donec mattis porta eros, aliquet finibus risus in. Donecd
+                  </p>
+                  <button class="readmore-btn">Read more</button>
+                </div>
               </div>
-              <div class="chair--text">
-                <p class="name">Modern Chair</p>
-                <p class="description">
-                  Donec mattis porta eros, aliquet finibus risus in. Donecd
-                </p>
-                <button class="readmore-btn">Read more</button>
-              </div>
-            </div>
 
-            <div class="flex gap">
-              <div class="testimonial-chair--item">
-                <img
-                  src="./Images/product-2.png"
-                  alt="chair"
-                  width="113px"
-                  class="middle-item"
-                />
+              <div class="flex gap">
+                <div class="testimonial-chair--item">
+                  <img
+                    src="./Images/product-2.png"
+                    alt="chair"
+                    width="113px"
+                    class="middle-item"
+                  />
+                </div>
+                <div class="chair--text">
+                  <p class="name">Kruzi Aero</p>
+                  <p class="description">
+                    Donec mattis porta eros, aliquet finibus risus in. Donecd
+                  </p>
+                  <button class="readmore-btn">Read more</button>
+                </div>
               </div>
-              <div class="chair--text">
-                <p class="name">Kruzi Aero</p>
-                <p class="description">
-                  Donec mattis porta eros, aliquet finibus risus in. Donecd
-                </p>
-                <button class="readmore-btn">Read more</button>
-              </div>
-            </div>
 
-            <div class="flex gap">
-              <div class="testimonial-chair--item">
-                <img src="./Images/product-3.png" alt="chair" width="78px" />
-              </div>
-              <div class="chair--text">
-                <p class="name">Ergonomic Chair</p>
-                <p class="description">
-                  Donec mattis porta eros, aliquet finibus risus in. Donecd
-                </p>
-                <button class="readmore-btn">Read more</button>
+              <div class="flex gap">
+                <div class="testimonial-chair--item">
+                  <img src="./Images/product-3.png" alt="chair" width="78px" />
+                </div>
+                <div class="chair--text">
+                  <p class="name">Ergonomic Chair</p>
+                  <p class="description">
+                    Donec mattis porta eros, aliquet finibus risus in. Donecd
+                  </p>
+                  <button class="readmore-btn">Read more</button>
+                </div>
               </div>
             </div>
           </div>
@@ -486,11 +492,11 @@
         </div>
       </section>
       <section class="blog">
-        <div class="flex">
+        <div class="blogs-title flex">
           <p class="title blog--title">Recently Blog</p>
           <button class="viewAll-btn">View All Posts</button>
         </div>
-        <div class="flex">
+        <div class="blogs flex">
           <div class="blog--item">
             <img src="./Images/blog1.png" alt="chairs" />
             <p class="blog--name">First Time Home Owner Ideas</p>
@@ -604,5 +610,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>
