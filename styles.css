@@ -222,7 +222,7 @@
     width: 500px;
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 530px) {
     width: 300px;
   }
 }
@@ -468,7 +468,7 @@
     }
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 500px) {
     margin-top: 50px;
     gap: 15px;
 
@@ -488,7 +488,7 @@
     padding: 100px;
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 500px) {
     padding: 40px;
   }
 }
@@ -571,7 +571,7 @@
   gap: 44px;
   text-align: center;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 500px) {
     gap: 20px;
   }
 }
@@ -620,7 +620,7 @@
   height: 54.57px;
   opacity: 0.1px;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 500px) {
     padding: 7px 10px;
     max-height: 30px;
     max-width: 30px;
@@ -630,7 +630,7 @@
 .carousel-control-prev-icon {
   margin-right: 300px;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 500px) {
     margin-right: 100px;
     margin-top: 150px;
   }
@@ -639,7 +639,7 @@
 .carousel-control-next-icon {
   margin-left: 300px;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 500px) {
     margin-left: 100px;
     margin-top: 150px;
   }
@@ -666,7 +666,7 @@
     margin-top: 100px;
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 500px) {
     margin-top: 50px;
 
     img {
@@ -685,7 +685,7 @@
     font-weight: 500;
     line-height: 27px;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 500px) {
       font-size: 12px;
     }
   }
@@ -695,7 +695,7 @@
     font-size: 13px;
     line-height: 32px;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 500px) {
       font-size: 10px;
     }
   }
